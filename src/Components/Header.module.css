@@ -19,7 +19,7 @@
 }
 
 .login {
-  color: #333;
+  color: var(--black);
   display: flex;
   align-items: center;
 }

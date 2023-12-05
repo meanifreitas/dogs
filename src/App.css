@@ -4,7 +4,12 @@
 
 body {
   margin: 0;
-  color: #333;
+  --black: #333;
+  --white: #eee;
+  --yellow: #FB1;
+  --dark-yellow: #764701;
+  --light-yellow: #FEA;
+  --red: #F31;
   --first-type: Helvetica, Arial, sans-serif;
   --second-type: 'Spectral', Georgia;
   font-family: var(--first-type);
@@ -30,7 +35,7 @@ button, input {
   display: block;
   font-size: 1rem;
   font-family: var(--first-type);
-  color: #333;
+  color: var(--black);
 }
 
 .container {
