@@ -20,7 +20,7 @@ body {
   padding-top: 4rem;
 }
 
-h1, h2, h3, h4, p {
+h1, h2, h3, h4, p, label {
   margin: 0px;
   color: var(--black);
 }
