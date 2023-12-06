@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './Login.module.css';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import LoginForm from './LoginForm';
 import LoginCreate from './LoginCreate';
@@ -11,14 +12,16 @@ const Login = () => {
 
   if (logged === true) return <Navigate to='/account' />
   return (
-    <div>
-      <Routes>
-        <Route path='/' element={<LoginForm />}/>
-        <Route path='create' element={<LoginCreate />}/>
-        <Route path='forgot' element={<LoginForgotPassword />}/>
-        <Route path='reset' element={<LoginResetPassword />}/>
-      </Routes>
-    </div>
+    <section className={styles.login}>
+      <div className={styles.forms}>
+        <Routes>
+          <Route path='/' element={<LoginForm />}/>
+          <Route path='create' element={<LoginCreate />}/>
+          <Route path='forgot' element={<LoginForgotPassword />}/>
+          <Route path='reset' element={<LoginResetPassword />}/>
+        </Routes>
+      </div>
+    </section>
   );
 }
 
