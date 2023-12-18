@@ -1,8 +1,7 @@
-# React + Vite
+# :dog: Dogs
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project was developed on the React course from [Origamid](https://www.origamid.com/).
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Login](project/login.png)
+![Feed](project/feed.png)
+![Mobile post](project/mobile.png)
