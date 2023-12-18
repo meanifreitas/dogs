@@ -4,7 +4,7 @@ This project was developed on the React course from [Origamid](https://www.origa
 
 ![Mobile Login](project/mobile-login.png)
 ![Mobile Feed](project/mobile-feed.png)
-![Mobile post](project/mobile.png)
+![Mobile post](project/mobile-post.png)
 ![Login](project/login.png)
 ![Feed](project/feed.png)
 ![Post](project/post.png)
