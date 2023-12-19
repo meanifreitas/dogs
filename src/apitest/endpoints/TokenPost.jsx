@@ -18,10 +18,8 @@ const TokenPost = () => {
         password
       })
     }).then(response => {
-      console.log(response);
       return response.json();
     }).then(json => {
-      console.log(json)
       setToken(json.token);
     });
   }
