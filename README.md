@@ -1,6 +1,6 @@
 # :dog: Dogs
 
-Dogs is a social network for sharing photos of out beloved pets.
+Dogs is a social network for sharing photos of our beloved pets.
 
 The project was developed in React using Vite during the [Origamid](https://www.origamid.com/) course.
 
