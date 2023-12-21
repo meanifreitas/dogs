@@ -9,6 +9,7 @@ import Image from '../Helper/Image';
 const PhotoContent = ({data, single}) => {
   const user = React.useContext(UserContext);
   const {photo, comments} = data;
+
   return (
     <div className={`${styles.photo} ${single ? styles.single : ''}`}>
       <div className={styles.img}>
@@ -31,7 +32,7 @@ const PhotoContent = ({data, single}) => {
       </div>
       <PhotoComments single={single} id={photo.id} comments={comments}/>
     </div>
-  )
+  );
 }
 
-export default PhotoContent
+export default PhotoContent;

@@ -8,18 +8,29 @@ import PhotoContent from '../Photo/PhotoContent';
 
 const FeedModal = ({photo, setModalPhoto}) => {
   const {data, error, loading, request} = useFetch();
+  const modalRef = React.useRef(null);
 
   React.useEffect(() => {
     const {url, options} = PHOTO_GET(photo.id);
     request(url, options);
   }, [photo, request]);
 
+  React.useEffect(() => {
+    const modal = modalRef.current;
+    modal.addEventListener('keydown', handleOutsideClick);
+
+    //removing the event listener when the component is dismounted
+    return () => {
+      modal.removeEventListener('keydown', handleOutsideClick);
+    };
+  }, []);
+
   function handleOutsideClick(event) {
-    if (event.target === event.currentTarget) setModalPhoto(null);
+    if (event.target === event.currentTarget || event.key === 'Escape') setModalPhoto(null);
   }
 
   return (
-    <div className={styles.modal} onClick={handleOutsideClick}>
+    <div className={styles.modal} onClick={handleOutsideClick} ref={modalRef} tabIndex='0'>
       {error && <Error error={error} />}
       {loading && <Loading />}
       {data && <PhotoContent data={data}/>}
