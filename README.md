@@ -1,6 +1,8 @@
 # :dog: Dogs
 
-This project was developed on the React course from [Origamid](https://www.origamid.com/).
+Dogs is a social network for sharing photos of out beloved pets.
+
+The project was developed in React using Vite during the [Origamid](https://www.origamid.com/) course.
 
 ![Mobile Login](project/mobile-login.png)
 ![Mobile Feed](project/mobile-feed.png)
