@@ -2,6 +2,7 @@ import React from 'react';
 import Input from '../Forms/Input';
 import Button from '../Forms/Button';
 import Error from '../Helper/Error';
+import Head from '../Helper/Head';
 import useForm from '../../Hooks/useForm';
 import useFetch from '../../Hooks/useFetch';
 import { RESET_PASSWORD } from '../../api';
@@ -40,6 +41,7 @@ const LoginResetPassword = () => {
 
   return (
     <div>
+      <Head title='Reset password' description='Reset password'/>
       <h1 className='title'>Reset your password</h1>
       <form onSubmit={handleSubmit}>
         <Input label='New password' type='password' name='password' {...password}/>

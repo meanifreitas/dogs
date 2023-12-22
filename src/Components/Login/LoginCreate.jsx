@@ -2,6 +2,7 @@ import React from 'react';
 import Input from '../Forms/Input';
 import Button from '../Forms/Button';
 import Error from '../Helper/Error';
+import Head from '../Helper/Head';
 import useForm from '../../Hooks/useForm';
 import useFetch from '../../Hooks/useFetch';
 import { USER_POST } from '../../api';
@@ -28,6 +29,7 @@ const LoginCreate = () => {
 
   return (
     <section className='animeLeft'>
+      <Head title='Create account' description='Create your account'/>
       <h1 className='title'>Create your account</h1>
       <form onSubmit={handleSubmit}>
         <Input label='username' type='text' name='username' {...username}/>

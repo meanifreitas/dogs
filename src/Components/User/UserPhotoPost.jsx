@@ -3,6 +3,7 @@ import styles from './UserPhotoPost.module.css';
 import Input from '../Forms/Input';
 import Error from '../Helper/Error'
 import Button from '../Forms/Button';
+import Head from '../Helper/Head';
 import useForm from '../../Hooks/useForm';
 import useFetch from '../../Hooks/useFetch';
 import { PHOTO_POST } from '../../api';
@@ -43,6 +44,7 @@ const UserPhotoPost = () => {
 
   return (
     <section className={`${styles.photoPost} animeLeft`}>
+      <Head title='Post' description='Post your picture'/>
       <form onSubmit={handleSubmit}>
         <Input label='Name' type='text' name='name' {...name} />
         <Input label='Weight' type='number' name='weight' {...weight} />
