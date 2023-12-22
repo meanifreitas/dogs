@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const types = {
   email: {
@@ -6,8 +6,8 @@ const types = {
     message: 'fill in a valid email'
   },
   password: {
-    regex: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/,
-    message: 'password must be at least 8 characteres, containing at least 1 lowecase character, 1 uppercase character and 1 digit'
+    regex: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/,
+    message: 'password must be at least 8 characteres, containing at least 1 lowercase character, 1 uppercase character and 1 digit'
   },
   number: {
     regex: /^\d+$/,
@@ -48,4 +48,4 @@ const useForm = (type) => {
   }
 }
 
-export default useForm
+export default useForm;
