@@ -119,7 +119,7 @@ export function LOST_PASSWORD(body) {
       },
       body: JSON.stringify(body)
     }
-  }
+  };
 }
 
 export function RESET_PASSWORD(body) {
@@ -132,5 +132,17 @@ export function RESET_PASSWORD(body) {
       },
       body: JSON.stringify(body)
     }
-  }
+  };
+}
+
+export function GET_STATS() {
+  return {
+    url: API_URL + '/api/stats',
+    options: {
+      method: 'GET',
+      headers: {
+        Authorization: 'Bearer ' + window.localStorage.getItem('token')
+      }
+    }
+  };
 }
