@@ -31,7 +31,7 @@ const LoginForm = () => {
         <Input label='username' type='text' name='username' {...username} />
         <Input label='password' type='password' name='password' {...password} />
         {loading ? <Button disabled>Loading...</Button> : <Button>Login</Button>}  
-        <Error error={error}/>
+        <Error error={error && 'Invalid user or password!'}/>
       </form>
       <Link className={styles.forgot} to='/login/forgot'>Forgot password</Link>
       <div className={styles.signup}>
